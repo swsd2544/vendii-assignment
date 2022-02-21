@@ -6,6 +6,11 @@ app.use(express.json());
 
 app.use('/ships', require('./routes/ships'));
 
+app.use(function (req, res, next) {
+	res.status(404);
+	res.type('txt').send('Not found');
+});
+
 app.use((err, req, res, next) => {
 	const message = err.message || 'Internal server error';
 	const status = err.status || 500;
