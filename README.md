@@ -2,7 +2,23 @@
 
 Implement findMostPilotedModel using Express.js
 
-The server will be running on port 3000
+### Run the server
+
+1. Clone this repository 
+```
+git clone git@github.com:swsd2544/vendii-assignment.git
+```
+2. Install dependencies 
+```
+npm install
+```
+3. Run the server
+```
+npm run start
+```
+The server will be running on port 3000.  
+  
+### Methods and Endpoints
 
 Method | URL | Description | Request Body/Query | Response
 --- | --- | :--- | :---: | --- 
